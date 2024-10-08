@@ -1,0 +1,259 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.6rem;
+    height: 100vh;
+}
+
+/* colores proyecto */
+:root{
+    --primary-color: #2C6BC9;
+    --primary-text-color: #fff;
+    --secondary-text-color:#000;
+}
+
+.linea-color-superior{
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 1rem;
+}
+
+header .imagen-hero{
+    max-width: 20rem;
+    margin-top: 5rem;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 0 3rem .5rem var(--primary-color);
+}
+header .imagen-hero:hover{
+    transition: all 1s ease-out;
+    transform: translateY(-1rem);
+    max-width: 21rem;
+}
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* estilos video */
+.video-hero{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+/* estilos textos */
+header h1{
+    color: var(--primary-text-color);
+}
+header p{
+color: var(--primary-text-color);
+margin-bottom: 5rem;
+}
+
+header h1:hover{
+    transition: all 0.5s ease;
+    color: var(--primary-color);
+}
+header p:hover{
+    transition: all 0.5s ease;
+    color: var(--primary-color);
+}
+
+#sobremi{
+    margin: 7rem 0;
+}
+#sobremi h2{
+    margin-left: 2rem;
+}
+#sobremi p{
+    margin-left: 2rem;
+    padding-right: 4rem;
+    line-height: 3rem;
+}
+#sobremi h2:hover{
+    transition: all 1s ease;
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+#sobremi p:hover{
+    transition: all 1s ease;
+    color: var(--primary-color);
+}
+
+/* estilso navbar */
+.navbar{
+    background-color: var(--primary-color);
+}
+
+.navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: 0;
+}
+.navbar ul li{
+    list-style: none;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    padding: 2rem
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: var(--primary-text-color);
+    padding: 1rem;
+}
+
+.navbar ul li a:hover{
+    transition: all .5s ease;
+    border-bottom: 1px solid var(--primary-text-color);
+    background-color: #264a80;
+}
+
+/* estilso seccion main */
+main{
+    padding-bottom: 5rem ;
+}
+.section-grid{
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    grid-template-rows: 1fr;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social a{
+    margin: 1rem 0;
+    margin-left: 2rem;
+}
+
+.social a img{
+    max-width: 4rem;
+}
+
+.social a img:hover{
+    transition: all .5s ease;
+    transform: translateX(.5em);
+}
+
+/* estilos seccion habilidades */
+.flex-habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex-habilidades div{
+    margin: 3rem;
+}
+
+.flex-habilidades div p{
+    text-align: center;
+}
+
+#habilidades h2{
+    margin-left: 12rem;
+}
+#habilidades h2:hover{
+    transition: all .5s ease;
+    color: var(--primary-color);
+}
+
+/* estilos contacto */
+.formulario-contacto{
+    width: 50%;
+    margin: auto;
+    border: 0.5rem solid var(--primary-color);
+    box-shadow: 0 0 1rem 0 var(--primary-color);
+    padding: 2rem 4rem;
+    margin-bottom: 5rem;
+}
+
+.formulario-contacto h2{
+    text-align: center;
+    color: var(--primary-color);
+}
+.formulario-contacto h2:hover{
+    transition: all 1s ease;
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+.formulario-contacto form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contacto form label{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.formulario-contacto form input{
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+.formulario-contacto form textarea{
+    margin-bottom: 2rem;
+}
+.formulario-contacto form button{
+    margin: auto;
+    padding: 2rem;
+    background-color: var(--primary-color);
+    font-weight: bold;
+    box-shadow: 0.6rem 0.6rem  #000;
+}
+.formulario-contacto form button:hover{
+    transition: transform 1s ease;
+    background-color: #6a7483;
+    transform: translatex(0.5rem);
+}
+.formulario-contacto form button:active{
+    background-color: #000000;
+    color: var(--primary-text-color);
+    
+}
+
+.formulario-contacto form input:focus{
+    transition: background-color 1s ease;
+    background-color: #9ab2d66c;
+}
+.formulario-contacto form textarea:focus{
+    transition: background-color 1s ease;
+    background-color: #9ab2d66c;
+}
+
+
+
+/* estilos footer */
+footer{
+    background-color: var(--primary-color);
+    padding: 0.2rem 0;
+}
+footer p{
+    color: var(--primary-text-color);
+    text-align: center;
+}
+footer small{
+    color: var(--primary-text-color);
+    text-align: center;
+}
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <title>Jorge Salinas</title>
+</head>
+
+<body>
+    <div class="linea-color-superior"></div>
+    <!-- seccion header -->
+    <header>
+        <video autoplay muted loop class="video-hero">
+            <source src="assets/video/52823-471089056_small.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+
+        <div class="overlay"></div>
+
+        <img class="imagen-hero" src="assets/imgs/hero.jpg" alt="imagen de perfil">
+
+        <h1>Jorge Salinas</h1>
+        <p>Desarrollador Web Freelancer</p>
+    </header>
+
+    <!-- seccion navegación -->
+    <section class="navbar">
+        <ul>
+            <li>
+                <a href="#sobremi">Sobre Mi</a>
+            </li>
+            <li>
+                <a href="#habilidades">Habilidades</a>
+            </li>
+            <li>
+                <a href="#contacto">Contacto</a>
+            </li>
+        </ul>
+        </nav>
+    </section>
+
+    <!-- seccion principal de la página web -->
+    <main>
+        <section id="sobremi" class="section-grid">
+            <div class="social">
+                <a href="https://github.com/jorsalinasdev" target="_blank">
+                    <img src="assets/imgs/icons8-github-128.png" alt="logo github" class="imagen-github">
+                </a>
+                <a href="https://www.linkedin.com/in/jorsalinasdev/" target="_blank">
+                    <img src="assets/imgs/linkedin.png" alt="logo de linkedin">
+                </a>
+                <a href="https://www.instagram.com/jorgesalinasdev/" target="_blank">
+                    <img src="assets/imgs/instagram.png" alt="logo de instagram">
+                </a>
+            </div>
+            <section>
+                <h2>Sobre Mi</h2>
+                <p>Apasionado por la tecnología y el aprendizaje continuo, actualmente me encuentro en formación
+                    autodidacta en desarrollo de software, con un enfoque integral que abarca tanto el desarrollo
+                    front-end como el back-end. Estoy comprometido con la mejora constante de mis habilidades técnicas y
+                    profesionales.</p>
+
+                <p>Comprometido con mis metas, organizado y siempre en búsqueda de nuevos retos que me permitan aplicar
+                    y ampliar mis conocimientos. </p>
+            </section>
+        </section>
+        
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <div class="flex-habilidades">
+                <div>
+                    <img src="assets/imgs/html.png" alt="logo html">
+                    <p>HTML</p>
+                </div>
+                <div>
+                    <img src="assets/imgs/css.png" alt="logo css">
+                    <P>CSS</P>
+                </div>
+                <div>
+                    <img src="assets/imgs/js.png" alt="logo javascript">
+                    <P>JavaScript</P>
+                </div>
+                <div>
+                    <img src="assets/imgs/git.png" alt="logo git">
+                    <P>Git</P>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <section id="contacto" class="formulario-contacto">
+        <h2>Contactame</h2>
+        <!-- modify this form HTML and place wherever you want your form -->
+        <form action="https://formspree.io/f/mbljrwor" method="POST">
+            <label id="email">Tu Email:</label>
+            <input type="email" name="email" id="email" required placeholder="Ecribe tu correo aquí">
+            
+            <label id="message">Tu Mensaje:</label>
+            <textarea name="message"rows="10" id="message" required placeholder="Escribe tu mensaje "></textarea>
+            
+            <!-- your other form fields go here -->
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Sitio Web hecho con ❤️ por mi - 2024</p>
+        <p><small>Jorge Salinas</small></p>
+    </footer>
+</body>
+
+</html>
